@@ -89,6 +89,15 @@ a,input, select{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+select{
+    -webkit-appearance: none;  
+    /*清除select默认样式*/
+    background: url("img/order_img/drop-down.png")no-repeat right;
+    /*注：上一步清除样式后，select中的三角符号也会被清除，所以需要自己添加下三角，我在此出用一个下三角背景图片填充*/
+    background-size: 0.3rem;
+    background-position-x: 96%;
+}
+
 abbr[title],
 acronym[title] {
     cursor: help;
